@@ -3,69 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Forever Partner?</title>
+    <title>Will You Be My Forever Love? 💖</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Soft pink gradient */
+            color: white;
         }
         .proposal-container {
             text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            backdrop-filter: blur(10px);
+            width: 80%;
+            max-width: 600px;
         }
         h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
+            color: #E91E63; /* Romantic pink color */
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-family: 'Cursive', sans-serif;
         }
         button {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 0 10px;
+            font-size: 22px;
+            padding: 15px 30px;
+            margin: 15px;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         #yesButton {
-            background-color: #4CAF50;
+            background-color: #FF4081;
             color: white;
         }
         #noButton {
-            background-color: #f44336;
+            background-color: #FF1744;
             color: white;
         }
         #yesButton:hover {
-            background-color: #45a049;
+            background-color: #E91E63;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
         #noButton:hover {
-            background-color: #da190b;
+            background-color: #D50000;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .heart {
+            font-size: 40px;
+            color: #FF4081;
+        }
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="proposal-container">
-        <h1>Will you be my forever partner?</h1>
-        <button id="yesButton">Yes 💖</button>
-        <button id="noButton">No 💔</button>
+        <h1>Will you be my forever love? 💖</h1>
+        <p class="heart">💖</p>
+        <button id="yesButton">Yes, Forever! 💍</button>
+        <button id="noButton">Not Yet, Maybe? 💔</button>
     </div>
 
     <script>
         document.getElementById('yesButton').addEventListener('click', function() {
-            alert("Yay! I knew you felt the same way! 💖 Let's make beautiful memories together!");
+            alert("Yay! I knew you felt the same way! 💖 Let's make our love story unforgettable!");
         });
 
         document.getElementById('noButton').addEventListener('click', function() {
-            alert("Oh, come on! You know we're perfect for each other. 😘 Deep down, it's a YES! 💖");
+            alert("I know it's soon, but I believe in us. We'll get there, won't we? 💖");
         });
     </script>
 </body>
 </html>
+
