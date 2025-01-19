@@ -6,87 +6,137 @@
     <title>Will You Be My Forever Love? 💖</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: 'Georgia', serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Soft pink gradient */
+            background: url('https://www.w3schools.com/w3images/rose.jpg') no-repeat center center fixed; /* Romantic rose background */
+            background-size: cover;
             color: white;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         .proposal-container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px 50px;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px 60px;
+            border-radius: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            backdrop-filter: blur(15px);
             width: 80%;
             max-width: 600px;
+            animation: slideUp 1s ease-in-out;
         }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         h1 {
-            color: #E91E63; /* Romantic pink color */
-            font-size: 32px;
-            margin-bottom: 30px;
-            font-family: 'Cursive', sans-serif;
+            color: #FF1493; /* Deep romantic pink */
+            font-size: 36px;
+            font-family: 'Brush Script MT', cursive;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 8px rgba(255, 20, 147, 0.5);
         }
+
+        .heart {
+            font-size: 50px;
+            color: #FF69B4; /* Lively pink */
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
         button {
-            font-size: 22px;
-            padding: 15px 30px;
-            margin: 15px;
+            font-size: 24px;
+            padding: 15px 35px;
+            margin: 20px 30px;
             cursor: pointer;
             border: none;
             border-radius: 50px;
             font-weight: bold;
             transition: transform 0.3s, box-shadow 0.3s;
-        }
-        #yesButton {
-            background-color: #FF4081;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            letter-spacing: 1.5px;
+            background-color: #FF1493;
             color: white;
         }
-        #noButton {
-            background-color: #FF1744;
-            color: white;
-        }
-        #yesButton:hover {
-            background-color: #E91E63;
+
+        button:hover {
+            background-color: #FF69B4;
             transform: scale(1.1);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
         }
-        #noButton:hover {
-            background-color: #D50000;
-            transform: scale(1.1);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+        button:active {
+            transform: scale(1);
         }
-        .heart {
-            font-size: 40px;
-            color: #FF4081;
-        }
+
         p {
-            font-size: 18px;
-            color: #ffffff;
+            font-size: 20px;
+            color: #fff;
             font-style: italic;
+            margin-top: 20px;
         }
+
+        .sparkles {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: #FFD700;
+            animation: sparkle 1.5s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
     </style>
 </head>
 <body>
+    <div class="sparkles">✨</div>
     <div class="proposal-container">
         <h1>Will you be my forever love? 💖</h1>
         <p class="heart">💖</p>
-        <button id="yesButton">Yes, Forever! 💍</button>
-        <button id="noButton">Not Yet, Maybe? 💔</button>
+        <button id="yesButton">Yes, Forever and Always! 💍</button>
+        <button id="noButton">Not Yet... But Maybe Someday 💔</button>
     </div>
 
     <script>
         document.getElementById('yesButton').addEventListener('click', function() {
-            alert("Yay! I knew you felt the same way! 💖 Let's make our love story unforgettable!");
+            alert("Yay! 💖 My heart knew it all along. Let's create a beautiful, timeless love story together! ✨");
         });
 
         document.getElementById('noButton').addEventListener('click', function() {
-            alert("I know it's soon, but I believe in us. We'll get there, won't we? 💖");
+            alert("I understand... but deep down, I know our love is inevitable. 💖 I'll wait for you forever.");
         });
     </script>
 </body>
 </html>
-
