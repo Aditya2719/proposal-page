@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +94,7 @@
     <div class="heart">💖</div>
     <div class="buttons">
         <button id="yesButton">Yes 💖</button>
-        <button id="noButton">No 💔</button>
+        <button id="noButton" disabled>No 💔</button>
     </div>
 
     <script>
@@ -106,21 +109,6 @@
             `;
             document.body.style.background = "#ff69b4"; // Default background after response
         });
-
-        document.getElementById('noButton').addEventListener('click', function() {
-            document.body.innerHTML = `
-                <div class="response-container" style="background-image: url('https://images.unsplash.com/photo-1555102664-bab255d69d2d?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjY0OHwwfDF8c2VhY2h8MXx8Y3V0ZSUyMGh1Z3xlbnwwfHx8fDE2NzY1NzI2Mzk&ixlib=rb-1.2.1&q=80&w=1080')">
-                    <h1>Oh no! 😢</h1>
-                    <div class="heart">💔</div>
-                    <p>My heart aches, but I know deep down that love can't be forced. But let me tell you this, you are everything to me, and my love for you will never fade. I'll wait, and I'll always be here... with my heart wide open.</p>
-                    <button onclick="window.location.reload()">Start Over</button>
-                </div>
-            `;
-            document.body.style.background = "#ff69b4"; // Default background after response
-            document.getElementById("noButton").disabled = true; // Disable the "No" button
-        });
     </script>
 </body>
 </html>
-
-
